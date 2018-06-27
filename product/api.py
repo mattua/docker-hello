@@ -13,8 +13,7 @@ class Product(Resource):
 
 		}
 
-api.add_resource(Product,'/')
+api.add_resource(Product,'/','/products')
 
 if __name__ =='__main__':
 	app.run(host='0.0.0.0',port=80,debug=True)
-			
