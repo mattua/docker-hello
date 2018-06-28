@@ -7,6 +7,12 @@ services:
    - ./product:/usr/src/app
   ports:
    - 5001:80
+ addnumbers:
+  build: ./addNumbers
+  volumes:
+   - ./addNumbers:/usr/src/app
+  ports:
+   - 5003:80
  website:
   build: ./website
   ports:
